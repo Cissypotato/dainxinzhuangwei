@@ -1,0 +1,13 @@
+/* pages/formList/formList.wxss */
+
+.container{padding: 30rpx;}
+.title{font-size: 32rpx;line-height: 4em;font-weight: 600}
+
+.item-wrapper{display: flex;align-items: center;margin-top: 30rpx;height: 20vw;padding: 0 20rpx;border-radius: 10rpx;border: 1px solid #ddd;box-shadow: 1px 1px 1px rgba(0,0,0,0.2)}
+
+.icon-wrpper{width: 12vw;height:12vw;border-radius: 50%;background: rgb(13,116,231);display: flex;justify-content: center;align-items: center;}
+.icon-gongdan{font-size: 40rpx;color: #fff}
+
+.info-wrapper{font-size: 26rpx;color: #555;line-height: 1.4em;width: 60%;margin-left: 30rpx;}
+.order{font-weight: 600}
+.more{color: #555;width: 20%;text-align: center}

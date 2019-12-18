@@ -1,0 +1,17 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/formList/formList",
+        "pages/newForm/newForm",
+        "pages/formList/detail/detail",
+        "pages/index/login/login"
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#3f51b5",
+        "navigationBarTitleText": "装维助手",
+        "navigationBarTextStyle": "white"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

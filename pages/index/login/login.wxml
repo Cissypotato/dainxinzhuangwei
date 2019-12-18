@@ -1,0 +1,4 @@
+<!--pages/index/login/login.wxml-->
+<view class="btn-wrapper">
+    <button  open-type="getPhoneNumber" bindgetphonenumber="bindgetphonenumber" class="btn">使用微信登录</button>
+</view>

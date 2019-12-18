@@ -1,0 +1,20 @@
+<!--pages/formList/detai/detail.wxml-->
+<view class="container">
+
+    <view wx:for="{{init_data}}" wx:key>
+        <view wx:if="{{index==0}}" class="header">
+            {{item.title}} {{item.value}}
+        </view>
+        <view wx:elif="{{item.type==3}}" class="img-wrapper">
+            <view class="title">{{item.title}}</view>
+            <image src="{{item.value}}" mode="widthFix"></image>
+        </view>
+        <view wx:else>
+            <view class="title">{{item.title}}</view>
+            <view class="content">{{item.value}}</view>
+        </view>
+    </view>
+
+
+
+</view>

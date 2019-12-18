@@ -1,0 +1,21 @@
+/* pages/newForm/newForm.wxss */
+
+.container{padding: 30rpx;}
+.input-wrapper>input{border: 1px solid #eee;padding: 10rpx;}
+.placeholder{color: #ddd;font-size: 24rpx;}
+.title{line-height: 3em;color: #333;font-size: 30rpx;}
+/* 图片上传 */
+.up-img-wrapper{margin-top: 40rpx;}
+.add-img-word{font-size: 28rpx;color: #555;line-height: 2em}
+.i-wrapper{width: 100%;}
+.i-wrapper>.img-wrapper{width:100%;margin-top: 20rpx;}
+
+.img-wrapper image {width: 100%; border-radius:0.2rem;}
+.i-wrapper>input{display: none}
+.btn {background:#eee; border:1px solid #ddd; color:#888; width:100%;  text-align:center; line-height: 2em;font-size: 30rpx;}
+
+
+.textarea-wrapper>textarea{border: 1px solid #eee;width: 100%;padding: 30rpx;box-sizing: border-box}
+
+.btn-wrapper{margin: 40rpx 0;}
+.btn1{background:  rgb(25,93,148);color: #fff;width: 100%;font-weight: 300;margin: 0;}

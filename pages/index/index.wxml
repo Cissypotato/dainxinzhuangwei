@@ -1,0 +1,68 @@
+<!--index.wxml-->
+
+
+<view>
+
+
+    <view class="user_pack">
+        <view class="avatar">
+            <open-data type="userAvatarUrl"></open-data>
+        </view>
+        <view class="user-name" wx:if="{{state}}">
+            <view>
+                <view class="tel">{{tel}}</view>
+                <open-data type="userNickName"></open-data>
+            </view>
+            <view class="logout" bindtap="logout">退出登录</view>
+        </view>
+        <view class="user-name" wx:else>
+            <view bindtap="toLogin">请登录</view>
+        </view>
+        <view class="clear"></view>
+    </view>
+
+
+    <view>
+        <view bindtap="toform1" data-id="1" class="list">我的工单</view>
+        <view bindtap="toform1" data-id="2" class="form">新工单</view>
+    </view>
+
+
+</view>
+
+
+
+<!-- <form class="form_pack" bindsubmit="certifySubmit">
+    <view wx:for="{{list}}" wx:key>
+
+        <view wx:if="{{item.type==1}}">
+            <input placeholder="{{item.title}}" placeholder-class="placeholder" name="name_{{item.id}}" class="input"></input>
+        </view>
+        <view wx:elif="{{item.type==2}}">
+            <textarea placeholder="{{item.title}}" name="name_{{item.id}}" />
+        </view>
+        <view wx:else>
+            <button bindtap="chooseImage_{{item.id}}" data-id="{{item.id}}">添加图片</button>
+        </view>
+
+    </view>
+
+     
+
+        <view class="">
+            <button class="confirm" form-type="submit">确认</button>
+        </view>
+
+        <view>{{kkk}}</view>
+</form> -->
+
+
+<!-- 
+    <view wx:for="{{list}}" wx:key>
+        <input class="weui-input" auto-focus placeholder="将会获取焦点"/>
+
+
+            <image src="{{item}}" mode="aspectFill" data-idx="{{index}}" bindtap="handleImagePreview"></image>
+            <view class='del' data-idx="{{index}}" bindtap="removeImage">删除图片</view>
+    </view>
+     -->

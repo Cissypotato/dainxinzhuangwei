@@ -1,0 +1,18 @@
+.clear {clear:both;}
+
+/* .user_pack {width:84vw; height:20vw; margin:5vw; border:1px solid #ddd; padding:0 3vw; border-radius:4px;}
+.user_pack>.avatar {float:left; width:14vw; height:14vw; margin-top:3vw; display:block; border-radius:14vw; overflow:hidden; border:1px solid #ddd; background:#eee;}
+.user_pack>.user-name {float:right; line-height:20vw;} */
+
+
+
+/*cissy*/
+
+.user_pack{display: flex;padding: 0 30rpx;align-items: center;height: 20vh;background: rgb(255,198,69);color: #fff}
+.user_pack>.avatar { width:14vw; height:14vw; margin-top:3vw; display:block; border-radius:14vw; overflow:hidden; border:1px solid #ddd; background:#eee;margin-right: 40rpx;}
+.user-name{display: flex;justify-content: space-between;flex: 2;align-items: center}
+.logout{font-size: 26rpx; }
+
+.list{margin:80rpx 30rpx; text-align: center;line-height: 30vh;background: rgb(25,93,148);font-size: 60rpx;color: #fff;}
+.form{margin: 30rpx; text-align: center;line-height: 30vh;background: rgb(255,130,0);font-size: 60rpx;color: #fff}
+

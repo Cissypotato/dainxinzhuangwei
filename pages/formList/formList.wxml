@@ -1,0 +1,27 @@
+<!--pages/formList/formList.wxml-->
+<!--pages/newForm/newForm.wxml-->
+
+
+<view class="container" wx:if="{{state}}">
+    <view class="title">我的工单</view>
+    <scroll-view scroll-y bindscrolltolower="lower" style="height: 1200rpx;" upper-threshold="0">
+        <view wx:for="{{list}}" class="list-wapper">
+
+            <view class="item-wrapper" data-id="{{item.id}}" bindtap="toDetail" wx:key>
+                <view class="icon-wrpper">
+                    <span class="iconfont icon-gongdan"></span>
+                </view>
+                <view class="info-wrapper">
+                    <view class="order">{{item.order}}</view>
+                    <view>{{item.date}}</view>
+                </view>
+                <view class="more">></view>
+            </view>
+        </view>
+    </scroll-view>
+</view>
+
+<view  class="login-wrapper" wx:else>
+ <view class="tologin" bindtap="toLogin">您还未登录，请登录后查看数据</view>
+
+</view>

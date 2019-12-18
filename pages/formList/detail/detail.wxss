@@ -1,0 +1,9 @@
+/* pages/formList/detai/detail.wxss */
+.container{padding: 30rpx;}
+
+.header{line-height: 3em;color: #555;font-size: 30rpx;border-bottom: 1px solid #eee}
+
+.title{line-height: 3em;color: #333;font-size: 30rpx;}
+.img-wrapper>image{width: 100%}
+
+.content{line-height: 2em;color: #555;font-size: 28rpx;}

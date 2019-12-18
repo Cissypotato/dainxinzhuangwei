@@ -1,0 +1,66 @@
+<!--pages/newForm/newForm.wxml-->
+<view class="container" wx:if="{{state}}">
+    <form class="form_pack" bindsubmit="certifySubmit">
+        <view wx:for="{{list}}" wx:key>
+
+            <view wx:if="{{item.type==1}}" class="input-wrapper">
+                <view class="title">{{item.title}}</view>
+                <input placeholder="{{item.title}}" placeholder-class="placeholder" name="db_{{item.id}}" class="input"></input>
+            </view>
+            <view wx:elif="{{item.type==2}}" class="textarea-wrapper">
+                <view class="title">{{item.title}}</view>
+                <textarea placeholder="{{item.title}}" name="db_{{item.id}}" placeholder-class="placeholder" />
+            </view>
+            <view wx:else>
+                <!-- <button bindtap="chooseImage_{{item.id}}" data-id="{{item.id}}" name="db_{{item.id}}">添加图片</button> -->
+
+                <view class="up-img-wrapper">
+                    <view class="title">{{item.title}}</view>
+                    <view class='i-wrapper'>
+                        <view class='img-wrapper'>
+                            <image wx:if="{{img_path[item.id]}}" src="{{img_path[item.id]}}" mode="aspectFill" data-idx="{{index}}" bindtap="handleImagePreview" data-id="{{item.id}}"></image>
+                            <!-- <view class='del' data-idx="{{index}}" bindtap="removeImage">删除图片</view> -->
+                        </view>
+                        <input name="db_{{item.id}}" value="{{img_url[item.id]}}"></input>
+                        <view class='img-wrapper add-img-wrapper' bindtap="chooseImage_1" data-id="{{item.id}}" name="pic_{{item.id}}">
+                            <view class='btn'>选择图片</view>
+                        </view>
+                    </view>
+
+                </view>
+
+
+
+            </view>
+
+        </view>
+
+        <!-- <view class="up-img-wrapper">
+
+
+        <view class='i-wrapper'>
+            <view class='img-wrapper'>
+                <image src="{{img_path_2}}" mode="aspectFill" data-idx="{{index}}" bindtap="handleImagePreview" data-id="{{item.id}}"></image>
+                
+            </view>
+            <view class='img-wrapper add-img-wrapper' bindtap="chooseImage_2" data-id="{{item.id}}" name="db_{{item.id}}">
+                <view class='btn'>添加图片</view>
+            </view>
+        </view>
+
+    </view> -->
+
+        <view class="btn-wrapper">
+            <button class="btn1" form-type="submit">确认</button>
+        </view>
+
+        <view>{{kkk}}</view>
+    </form>
+
+</view>
+
+
+<view  class="login-wrapper" wx:else>
+ <view class="tologin" bindtap="toLogin">您还未登录，请登录后填写工单</view>
+
+</view>
