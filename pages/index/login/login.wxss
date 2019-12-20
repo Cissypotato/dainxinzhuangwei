@@ -1,4 +1,4 @@
 /* pages/index/login/login.wxss */
 
-.btn-wrapper{background:rgb(25,93,148);width: 100vw;height: 100vh }
-.btn{background:rgb(255,130,0);color: #fff;position:relative;top:80vh;font-weight: 300}
+.btn-wrapper{width: 100vw;height: 100vh }
+.btn{background:#fff;color: #F15A24;position:relative;top:80vh;font-weight: 300;width: 70%;}

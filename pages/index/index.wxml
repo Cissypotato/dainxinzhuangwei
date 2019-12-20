@@ -4,7 +4,7 @@
 <view>
 
 
-    <view class="user_pack">
+    <view class="user_pack" style="background-image:url(https://volunteer.guaishe.com/img/2.png);background-position:center bottom;background-size:cover">
         <view class="avatar">
             <open-data type="userAvatarUrl"></open-data>
         </view>
@@ -18,13 +18,24 @@
         <view class="user-name" wx:else>
             <view bindtap="toLogin">请登录</view>
         </view>
-        <view class="clear"></view>
     </view>
 
 
-    <view>
-        <view bindtap="toform1" data-id="1" class="list">我的工单</view>
-        <view bindtap="toform1" data-id="2" class="form">新工单</view>
+    <view style="background-image:url(https://volunteer.guaishe.com/img/5.png);background-position:center bottom;background-size:cover" class="btn-wrapper">
+        <view bindtap="toform1" data-id="1" class="list"style="background-image:url(https://volunteer.guaishe.com/img/3.png);background-position:center center;background-size:cover">
+            <view class="btn">我的工单</view>
+            <view class="info">
+              <view>点击查阅订单详情</view>
+              <view>随时了解维修进度</view>
+            </view>
+        </view>
+        <view bindtap="toform1" data-id="2" class="form"style="background-image:url(https://volunteer.guaishe.com/img/4.png);background-position:center center;background-size:cover">
+        <view class="btn">新工单</view>
+            <view class="info info1">
+              <view>各区覆盖式维修专员</view>
+              <view>为您提供故障维修服务</view>
+            </view>
+        </view>
     </view>
 
 

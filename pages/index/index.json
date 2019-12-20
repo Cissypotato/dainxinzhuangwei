@@ -1,7 +1,7 @@
 {
   "usingComponents": {},
   "backgroundTextStyle": "dark",
-"navigationBarBackgroundColor": "#fff",
+"navigationBarBackgroundColor": "#176BFF",
 "navigationBarTitleText": "装维助手",
-"navigationBarTextStyle": "black"
+"navigationBarTextStyle": "white"
 }

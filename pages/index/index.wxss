@@ -8,11 +8,15 @@
 
 /*cissy*/
 
-.user_pack{display: flex;padding: 0 30rpx;align-items: center;height: 20vh;background: rgb(255,198,69);color: #fff}
-.user_pack>.avatar { width:14vw; height:14vw; margin-top:3vw; display:block; border-radius:14vw; overflow:hidden; border:1px solid #ddd; background:#eee;margin-right: 40rpx;}
-.user-name{display: flex;justify-content: space-between;flex: 2;align-items: center}
-.logout{font-size: 26rpx; }
+.user_pack{display: flex;flex-direction: column;align-items: center;color: #fff;height: 30vh;justify-content: center}
+.user_pack>.avatar { width:14vw; height:14vw;display:block; border-radius:14vw; overflow:hidden; border:1px solid #ddd; background:#eee;}
+.user-name{font-size: 26rpx;text-align: center;margin-top: 10rpx;line-height: 1.6em;width: 100%;position: relative;}
+.logout{font-size: 24rpx;position: absolute;right: 0;background: #F7931E;top: 0;padding-left: 30rpx;padding-right: 10rpx;border-top-left-radius: 20rpx;border-bottom-left-radius: 20rpx;margin-top: 10rpx;}
 
-.list{margin:80rpx 30rpx; text-align: center;line-height: 30vh;background: rgb(25,93,148);font-size: 60rpx;color: #fff;}
-.form{margin: 30rpx; text-align: center;line-height: 30vh;background: rgb(255,130,0);font-size: 60rpx;color: #fff}
+.btn-wrapper{height: 70vh;padding-top: 80rpx;box-sizing: border-box}
+.list{margin:0 40rpx;height: 25vh;color: #fff;border-radius: 20rpx;overflow: hidden}
+.form{margin: 40rpx; height: 25vh;color: #fff;border-radius: 20rpx;overflow: hidden}
 
+.btn{ height: 8vh;font-size: 40rpx;margin-left: 14%;width: 30%;display: flex;align-items:center;margin-top: 5vh;}
+.info{font-size: 26rpx;border-top: 1px solid #4F6DFE;line-height: 1.6em;margin-left: 14%;display: inline-block;padding-top: 10rpx;}
+.info1{border-top: 1px solid #F89634;}

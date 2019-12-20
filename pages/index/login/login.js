@@ -59,13 +59,17 @@ Page({
                             'content-type': 'application/x-www-form-urlencoded'
                         },
                         success: (res) => {
-                            console.log(res)
+                            console.log()
                             let state = res.data.state
                             if (state == 0) {
-                                app.alert(res.txt)
-                                wx.navigateBack({
-                                    delta: 1,
-                                })
+                                console.log(res.data.txt)
+                                app.alert(res.data.txt)
+                                setTimeout(()=>{
+                                    wx.navigateBack({
+                                        delta: 1,
+                                    })
+                                },2000)
+                               
                             }else if(state==1){
                                 app.alert("登录成功")
                                 wx.setStorageSync("token", token)

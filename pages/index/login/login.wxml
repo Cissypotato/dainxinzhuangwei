@@ -1,4 +1,4 @@
 <!--pages/index/login/login.wxml-->
-<view class="btn-wrapper">
+<view class="btn-wrapper" style="background-image:url(https://volunteer.guaishe.com/img/1.jpg);background-position:center center;background-size:cover">
     <button  open-type="getPhoneNumber" bindgetphonenumber="bindgetphonenumber" class="btn">使用微信登录</button>
 </view>

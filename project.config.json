@@ -58,6 +58,13 @@
 					"id": -1,
 					"name": "pages/newForm/newForm",
 					"pathName": "pages/newForm/newForm",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/login/login",
+					"pathName": "pages/index/login/login",
 					"scene": null
 				}
 			]
